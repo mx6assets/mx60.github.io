@@ -1,7 +1,5 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
 
-<script>
-</script>
 <style>
 ::-webkit-scrollbar 
 {
@@ -102,9 +100,10 @@ width:0px;
 
   new THREE.FBXLoader().load('shovel.fbx', (fbx) => {workspace.add(fbx); animate(); });
 
-  engine.domElement.style.right = '27.5%';
 
-  setTimeout(() => document.body.style = 'width:${window.InnerWidth}px;height:${window.InnerHeight}px', 1000);
+  setTimeout(() => { document.body.style = `width:${window.innerWidth}px;height:${window.innerHeight}px`;engine.setSize(1000,1000);}, 1000);
+
+
   
   function animate()
     {
