@@ -100,7 +100,7 @@ width:0px;
   workspace.add(FL);
 
   new THREE.FBXLoader().load('shovel.fbx', (fbx) => {workspace.add(fbx); animate(); });
-
+  engine.domElement.style.position = 'absolute';
   engine.domElement.style.left = '200%';
 
 
