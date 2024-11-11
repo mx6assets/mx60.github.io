@@ -82,7 +82,7 @@ width:0px;
 <script>
   const workspace = new THREE.Scene(), perspective = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
   const engine = new THREE.WebGLRenderer();
-  engine.setSize(3113,1306);
+  engine.setSize(window.innerWidth,1306);
 
   document.body.appendChild(engine.domElement);
   perspective.position.z = 9.95;
