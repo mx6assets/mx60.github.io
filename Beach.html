@@ -77,8 +77,8 @@ width:0px;
 
 
    <div style="display:flex; align-items:center; justify-content:center;">
-   <a href="shovel.fbx" onclick="fetch('/amount').then(r => r.text()).then(t => amount.innerText = t)">
-     <img src="downloadtex.png" style="width:28.5px; height:28.5px; user-select:none;" >
+   <a href="shovel.fbx" onclick="fetch('/amount').then(r => r.text()).then(t => document.getElementById('amount').innerText = t)">
+     <img src="downloadtex.png" style="width:28.5px; height:28.5px; user-select:none;">
    </a>
    </div>
   
