@@ -73,14 +73,6 @@ width:0px;
        48 KB
      </h2>
    </h2>
-
-
-
-   <div style="display:flex; align-items:center; justify-content:center;">
-   <a href="shovel.fbx">
-     <img src="downloadtex.png" style="width:28.5px; height:28.5px; user-select:none;">
-   </a>
-   </div>
   
   
   
@@ -106,7 +98,7 @@ width:0px;
   FL.position.set(3.5,4,2.5);
   workspace.add(FL);
 
-  new THREE.FBXLoader().load('.fbx', (fbx) => {workspace.add(fbx); animate(); });
+  new THREE.FBXLoader().load('apple.fbx', (fbx) => {workspace.add(fbx); animate(); });
 
   
   
@@ -133,7 +125,7 @@ width:0px;
       font-family:monospace;
       "
       >
-      Barrel
+      Head Phones
       <br>
       <h2 style=
         "
@@ -143,21 +135,11 @@ width:0px;
         font-family:monospace;
         "
         >
-        905 vertices
+        348 vertices
         <br>
-        50 KB
+        31 KB
       </h2>
     </h2>
-
-
-    <div style="display:flex; align-items:center; justify-content:center;">
-    <a href="barrel.fbx">
-      <img src="downloadtex.png" style="width:28.5px; height:28.5px; user-select:none; " >
-    </a>
-    </div>
-
-
-
    
 
   <script>
@@ -182,7 +164,7 @@ width:0px;
     FL_B1.position.set(3.5,4,2.5);
     workspace_B1.add(FL_B1);
     
-    new THREE.FBXLoader().load('barrel.fbx', (fbx) => {workspace_B1.add(fbx); animate_B1(); });
+    new THREE.FBXLoader().load('headphones.fbx', (fbx) => {workspace_B1.add(fbx); animate_B1(); });
 
 
     function animate_B1()
@@ -203,7 +185,7 @@ width:0px;
      font-family:monospace;
      "
      >
-     Man
+     Phone
      <br>
      <h2 style=
        "
@@ -213,18 +195,12 @@ width:0px;
        font-family:monospace;
        "
        >
-       422 vertices
+       780 vertices
        <br>
-       111 KB
+       43 KB
      </h2>
    </h2>
 
-
-   <div style="display:flex; align-items:center; justify-content:center;">
-   <a href="man.fbx">
-     <img src="downloadtex.png" style="width:28.5px; height:28.5px; user-select:none;" >
-   </a>
-   </div>
 
 
 
@@ -254,7 +230,7 @@ width:0px;
     FL_B2.position.set(3.5,4,2.5);
     workspace_B2.add(FL_B2);
 
-    new THREE.FBXLoader().load('man_unrigged.fbx', (fbx) => {workspace_B2.add(fbx); animate_B2(); });
+    new THREE.FBXLoader().load('phone.fbx', (fbx) => {workspace_B2.add(fbx); animate_B2(); });
 
 
     function animate_B2() 
@@ -280,7 +256,7 @@ width:0px;
       font-family:monospace;
       "
       >
-      Rocks
+      Comb
       <br>
       <h2 style=
         "
@@ -290,137 +266,21 @@ width:0px;
         font-family:monospace;
         "
         >
-        260 vertices
+        1188 vertices
         <br>
         27 KB
       </h2>
     </h2>
 
 
-    <div style="display:flex; align-items:center; justify-content:center;">
-    <a href="rocks.fbx">
-      <img src="downloadtex.png" style="width:28.5px; height:28.5px; user-select:none;" >
-    </a>
-    </div>
 
 
 
 
 
 
+   
 
-   <script>
-     const workspace_B3 = new THREE.Scene(), perspective_B3 = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
-     const engine_B3 = new THREE.WebGLRenderer();
-     engine_B3.setSize(window.innerWidth,1536);
-
-     document.body.appendChild(engine_B3.domElement);
-     perspective_B3.position.z = 9.95;
-     perspective_B3.position.y = 13.5;
-     perspective_B3.position.x = 1.8;
-
-     const brightness_B3 = new THREE.AmbientLight(0xffffff, 1)
-     workspace_B3.add(brightness_B3);
-
-     workspace_B3.background = new THREE.Color(0x000105);
-     const _360_B3 = new THREE.OrbitControls(perspective_B3, engine_B3.domElement);
-
-     _360_B3.enableZoom = false;
-     _360_B3.enablePan = false;
-     const FL_B3 = new THREE.DirectionalLight(0xfccaa2,.5);
-     FL_B3.position.set(3.5,4,2.5);
-     workspace_B3.add(FL_B3);
-
-     new THREE.FBXLoader().load('rocks.fbx', (fbx) => {workspace_B3.add(fbx); animate_B3(); });
-
-
-     function animate_B3() 
-       {
-       requestAnimationFrame(animate_B3);
-       engine_B3.render(workspace_B3, perspective_B3);
-       _360_B3.update();
-       }
-       window.addEventListener('resize',()=> {engine_B3.setSize(window.innerWidth,window.innerHeight); perspective_B3.aspect = window.innerWidth / window.innerHeight; perspective_B3.updateProjectionMatrix();});
-   </script>
-
-
-
-
-
-
-
-
-   <h2 style=
-     "
-     color:#f7f7f7;
-     font-size:17.45px;
-     text-align:center;
-     user-select:none;
-     font-family:monospace;
-     "
-     >
-     Palm Tree
-     <br>
-     <h2 style=
-       "
-       color:#f7f7f7;
-       font-size:12px;
-       text-align:center;
-       font-family:monospace;
-       "
-       >
-       634 vertices
-       <br>
-       43 KB
-     </h2>
-   </h2>
-
-
-   <div style="display:flex; align-items:center; justify-content:center;">
-   <a href="palmtree.fbx">
-     <img src="downloadtex.png" style="width:28.5px; height:28.5px; user-select:none;" >
-   </a>
-   </div>
-
-
-
-
-
-
-
-   <script>
-    const workspace_B4 = new THREE.Scene(), perspective_B4 = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
-    const engine_B4 = new THREE.WebGLRenderer();
-    engine_B4.setSize(window.innerWidth,1536);
-
-    document.body.appendChild(engine_B4.domElement);
-    perspective_B4.position.z = 9.95;
-    perspective_B4.position.y = 13.5;
-    perspective_B4.position.x = 1.8;
-
-    const brightness_B4 = new THREE.AmbientLight(0xffffff, 1)
-    workspace_B4.add(brightness_B4);
-
-    workspace_B4.background = new THREE.Color(0x000105);
-    const _360_B4 = new THREE.OrbitControls(perspective_B4, engine_B4.domElement);
-
-    _360_B4.enableZoom = false;
-    _360_B4.enablePan = false;
-    const FL_B4 = new THREE.DirectionalLight(0xfccaa2,.5);
-    FL_B4.position.set(3.5,4,2.5);
-    workspace_B4.add(FL_B4);
-
-    new THREE.FBXLoader().load('palmtree_view.fbx', (fbx) => {workspace_B4.add(fbx); animate_B4(); });
-
-
-    function animate_B4()
-      {
-      requestAnimationFrame(animate_B4);
-      engine_B4.render(workspace_B4, perspective_B4);
-      _360_B4.update();
-      }
-      window.addEventListener('resize',()=> {engine_B4.setSize(window.innerWidth,window.innerHeight); perspective_B4.aspect = window.innerWidth / window.innerHeight; perspective_B4.updateProjectionMatrix();});
-   </script>
 
 <div style="width:100%; height:9.5%; background-color:#000103;" >
   <h2 style=
