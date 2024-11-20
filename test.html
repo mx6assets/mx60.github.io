@@ -1,0 +1,38 @@
+<script src="https://unpkg.com/fflate"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/FBXLoader.js" ></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+<script>
+  const workspace = new THREE.Scene(), perspective = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
+  const engine = new THREE.WebGLRenderer();
+  engine.setSize(window.innerWidth,1536);
+
+  document.body.appendChild(engine.domElement);
+  perspective.position.z = 9.95;
+  perspective.position.y = 13.5;
+  perspective.position.x = 1.8;
+
+  const brightness = new THREE.AmbientLight(0xffffff, 1)
+  workspace.add(brightness);
+
+  workspace.background = new THREE.Color(0x000105);
+  const _360 = new THREE.OrbitControls(perspective, engine.domElement);
+
+  _360.enableZoom = false;
+  _360.enablePan = false;
+  const FL = new THREE.DirectionalLight(0xfccaa2,.5);
+  FL.position.set(3.5,4,2.5);
+  workspace.add(FL);
+
+  new THREE.FBXLoader().load('shovel.fbx', (fbx) => {workspace.add(fbx); animate(); });
+
+  
+  
+  function animate()
+    {
+    requestAnimationFrame(animate);
+    engine.render(workspace, perspective);
+    _360.update();
+    }
+    window.addEventListener('resize',()=> {engine.setSize(window.innerWidth,window.innerHeight); perspective.aspect = window.innerWidth / window.innerHeight; perspective.updateProjectionMatrix();});
+</script>
