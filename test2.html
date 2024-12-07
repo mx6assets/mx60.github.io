@@ -87,6 +87,7 @@ new THREE.FBXLoader().load('palmtree_view.fbx', (fbx) => {workspace_B4.add(fbx);
 function animate_B4()
 {
 requestAnimationFrame(animate_B4);
+engine_B4.setSize(455,377.5);
 engine_B4.render(workspace_B4, perspective_B4);
 _360_B4.update();
 }
