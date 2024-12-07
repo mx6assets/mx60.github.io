@@ -66,7 +66,7 @@ perspective_B4.position.x = 1.8;
 const brightness_B4 = new THREE.AmbientLight(0xffffff, 1)
 workspace_B4.add(brightness_B4);
 
-workspace_B4.background = new THREE.Color(0x000105);
+workspace_B4.background = new THREE.Color(0xfafafa);
 const _360_B4 = new THREE.OrbitControls(perspective_B4, engine_B4.domElement);
 
 _360_B4.enableZoom = false;
@@ -86,6 +86,6 @@ engine_B4.render(workspace_B4, perspective_B4);
 _360_B4.update();
 }
 window.addEventListener('resize',()=> {engine_B4.setSize(window.innerWidth,window.innerHeight); perspective_B4.aspect = window.innerWidth / window.innerHeight; perspective_B4.updateProjectionMatrix();});
-</script>
+</script
 
 </body>
