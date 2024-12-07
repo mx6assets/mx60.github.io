@@ -53,15 +53,13 @@ Low Poly
 <br>
 Beach - 2024
 </h2>
-
-  
 </a>
   
-  
+<div style="display:flex; align-items:center; justify-content:center;">
 <script>
 const workspace_B4 = new THREE.Scene(), perspective_B4 = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
 const engine_B4 = new THREE.WebGLRenderer();
-engine_B4.setSize(455,377.5);
+engine_B4.setSize(625,377.5);
 
  document.body.appendChild(engine_B4.domElement);
 perspective_B4.position.z = 9.95;
@@ -87,11 +85,12 @@ new THREE.FBXLoader().load('palmtree_view.fbx', (fbx) => {workspace_B4.add(fbx);
 function animate_B4()
 {
 requestAnimationFrame(animate_B4);
-engine_B4.setSize(455,377.5);
+engine_B4.setSize(625,377.5);
 engine_B4.render(workspace_B4, perspective_B4);
 _360_B4.update();
 }
-window.addEventListener('resize',()=> {engine_B4.setSize(455,377.5); perspective_B4.aspect = window.innerWidth / window.innerHeight; perspective_B4.updateProjectionMatrix();});
+window.addEventListener('resize',()=> {engine_B4.setSize(625,377.5); perspective_B4.aspect = window.innerWidth / window.innerHeight; perspective_B4.updateProjectionMatrix();});
 </script
+</div>
 
 </body>
