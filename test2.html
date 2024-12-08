@@ -81,6 +81,8 @@ workspace_B4.add(FL_B4);
 
 new THREE.FBXLoader().load('palmtree_view.fbx', (fbx) => {workspace_B4.add(fbx); animate_B4(); });
 
+engine_B4.domElement.style.position = "absolute";
+engine_B4.domElement.left = "50%";
 
 function animate_B4()
 {
