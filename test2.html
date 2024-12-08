@@ -58,7 +58,7 @@ Beach - 2024
 <script>
 const workspace_B4 = new THREE.Scene(), perspective_B4 = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
 const engine_B4 = new THREE.WebGLRenderer();
-engine_B4.setSize(625,377.5);
+engine_B4.setSize(window.innerWidth,377.5);
 
  document.body.appendChild(engine_B4.domElement);
 perspective_B4.position.z = 9.95;
@@ -80,13 +80,10 @@ workspace_B4.add(FL_B4);
 
 new THREE.FBXLoader().load('palmtree_view.fbx', (fbx) => {workspace_B4.add(fbx); animate_B4(); });
 
-engine_B4.domElement.style.position = "absolute";
-engine_B4.domElement.left = "50%";
-
 function animate_B4()
 {
 requestAnimationFrame(animate_B4);
-engine_B4.setSize(625,377.5);
+engine_B4.setSize(window.innerWidth,377.5);
 engine_B4.render(workspace_B4, perspective_B4);
 _360_B4.update();
 }
