@@ -55,7 +55,6 @@ Beach - 2024
 </h2>
 </a>
   
-<div style="display:flex; align-items:center; justify-content:center;">
 <script>
 const workspace_B4 = new THREE.Scene(), perspective_B4 = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
 const engine_B4 = new THREE.WebGLRenderer();
@@ -92,7 +91,6 @@ engine_B4.render(workspace_B4, perspective_B4);
 _360_B4.update();
 }
 window.addEventListener('resize',()=> {engine_B4.setSize(625,377.5); perspective_B4.aspect = window.innerWidth / window.innerHeight; perspective_B4.updateProjectionMatrix();});
-</script
-</div>
+</script>
 
 </body>
