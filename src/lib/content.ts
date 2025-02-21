@@ -321,7 +321,7 @@ export const content = {
         },
         {
             name: "Patreon",
-            url: "https://patreon.com",
+            url: "https://patreon.com/c/MX6",
             icon: PatreonIcon
         },
         {
@@ -330,7 +330,7 @@ export const content = {
             icon: DiscordIcon
         }
     ],
-    version: "v5.75"
+    version: "v8.75" 
 }
 
 export function getPackBySlug(slug: string) {
