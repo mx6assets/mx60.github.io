@@ -7,6 +7,16 @@ interface ReleaseNote {
 
 export const releaseNotes: ReleaseNote[] = [
     {
+        version: "v8.75",
+        date: "2/21/2025",
+        additions: [
+            "Added ads",
+            "Major web redesign changes",
+            "New domain",
+            "Small bug fixes"
+        ],
+    },
+    {
         version: "v5.75",
         date: "2/15/2025",
         additions: [
@@ -17,6 +27,7 @@ export const releaseNotes: ReleaseNote[] = [
     {
         version: "v5.45",
         date: "1/27/2025",
+        image: "/image/Nodnin.png",
         additions: [
             "Nondin Studios partnership"
         ]
@@ -24,7 +35,7 @@ export const releaseNotes: ReleaseNote[] = [
     {
         version: "v5.35",
         date: "1/19/2025",
-        image: "/image/ChaoticMC.gif",  // Example image
+        image: "/image/ChaoticMC.gif",
         additions: [
             "Chaotic MC partnership"
         ]
@@ -39,6 +50,7 @@ export const releaseNotes: ReleaseNote[] = [
     {
         version: "v4.9",
         date: "1/6/2025",
+        image: "/image/Han.png",
         additions: [
             "Han Studio partnership",
             "New UI Icon for future socials"
@@ -47,6 +59,7 @@ export const releaseNotes: ReleaseNote[] = [
     {
         version: "v4.8",
         date: "12/27/2024",
+        image: "/image/MetaLoot.png",
         additions: [
             "Partnership board",
             "MetaLoot partnership"
