@@ -1,2 +1,12 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script>
+  import Comunity from "$lib/components/layouts/home/Comunity.svelte";
+  import Hero from "$lib/components/layouts/home/Hero.svelte";
+    import Partners from "$lib/components/layouts/home/Partners.svelte";
+  import Teams from "$lib/components/layouts/home/Teams.svelte";
+</script>
+
+<Hero />
+<Teams />
+<Partners/>
+<Comunity />
+
